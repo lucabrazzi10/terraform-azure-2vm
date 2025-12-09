@@ -23,3 +23,5 @@ module "vm" {
 output "dev_vm_private_ips" {
   value = module.vm.private_ips
 }
+
+
