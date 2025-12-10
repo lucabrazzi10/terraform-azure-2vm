@@ -1,3 +1,7 @@
+provider "azurerm" {
+  features {}
+}
+
 module "network" {
   source              = "../../modules/network"
   vnet_name           = "dev-vnet"
@@ -25,3 +29,7 @@ output "dev_vm_private_ips" {
 }
 
 
+resource "azurerm_resource_group" "dev" {
+  name     = "rgs-dev"
+  location = "eastus"
+}
