@@ -11,7 +11,7 @@ allowed_ssh_cidrs = [
   # keep empty or add only secure CIDRs if you ever expose SSH via Bastion/jump
 ]
 
-boot_diagnostics_storage_uri = ""  # optional
+boot_diagnostics_storage_uri = "" # optional
 
 # Use same or different SSH key(s), up to you
 vms = {

@@ -11,7 +11,7 @@ allowed_ssh_cidrs = [
   # example: "1.2.3.4/32" if you ever open SSH from home/VPN
 ]
 
-boot_diagnostics_storage_uri = ""  # e.g. "https://mystorage.blob.core.windows.net/" if you enable it
+boot_diagnostics_storage_uri = "" # e.g. "https://mystorage.blob.core.windows.net/" if you enable it
 
 # Replace ssh_public_key with your actual public key from ~/.ssh/id_rsa.pub or id_ed25519.pub
 vms = {
