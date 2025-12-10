@@ -1,3 +1,7 @@
+provider "azurerm" {
+  features {}
+}
+
 module "network" {
   source              = "../../modules/network"
   vnet_name           = "dev-vnet"
