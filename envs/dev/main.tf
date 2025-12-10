@@ -1,6 +1,4 @@
-provider "azurerm" {
-  features {}
-}
+
 
 module "network" {
   source              = "../../modules/network"
