@@ -5,7 +5,7 @@ module "network" {
   subnet_name         = "dev-subnet"
   subnet_prefix       = ["10.10.1.0/24"]
   location            = var.location
-  resource_group_name = var.resource_group_name      # <– just a string
+  resource_group_name = var.resource_group_name # <– just a string
   tags                = var.tags
   allowed_ssh_cidrs   = var.allowed_ssh_cidrs
 }
@@ -14,7 +14,7 @@ module "vm" {
   source                       = "../../modules/vm"
   vms                          = var.vms
   location                     = var.location
-  resource_group_name          = var.resource_group_name      # <– just a string
+  resource_group_name          = var.resource_group_name # <– just a string
   subnet_id                    = module.network.subnet_id
   tags                         = var.tags
   boot_diagnostics_storage_uri = var.boot_diagnostics_storage_uri
