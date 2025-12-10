@@ -25,3 +25,7 @@ output "dev_vm_private_ips" {
 }
 
 
+resource "azurerm_resource_group" "dev" {
+  name     = "rgs-dev"
+  location = "eastus"
+}
